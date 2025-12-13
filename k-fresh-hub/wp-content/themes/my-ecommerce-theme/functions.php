@@ -23,6 +23,16 @@ function mytheme_register_products() {
         'supports' => ['title','editor','thumbnail']
     ]);
 }
+function mytheme_enqueue_styles() {
+    wp_enqueue_style(
+        'mytheme-style',
+        get_stylesheet_uri(),
+        [],
+        wp_get_theme()->get('Version')
+    );
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
+
 add_action('init','mytheme_register_products');
 
 function mytheme_register_product_category() {

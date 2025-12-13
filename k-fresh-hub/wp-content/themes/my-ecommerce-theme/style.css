@@ -1,6 +1,130 @@
 /*
- Theme Name: My E-commerce Theme
- Author: Demo
- Description: Starter custom e-commerce theme without WooCommerce.
- Version: 1.0
+Theme Name: My E-commerce Theme
+Author: Demo
+Version: 1.0
 */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 16px;
+}
+
+/* Logo */
+.logo img {
+  height: 40px;
+}
+
+
+.search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box form {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin-left:150px ;
+}
+
+.search-box input[type="search"] {
+  width: 100%;
+  padding: 10px 14px 10px 40px; /* space for icon */
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none; /* click goes to input */
+}
+
+/* Menu */
+.main-nav {
+    margin-right: 150px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+ 
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.menu .auth a {
+  color: #2e7d32;
+  font-weight: 600;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+
+  /* Hide menu by default */
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    z-index: 999;
+  }
+
+  /* Show full menu */
+  .main-nav.active {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .menu li {
+    margin: 12px 0;
+  }
+}
