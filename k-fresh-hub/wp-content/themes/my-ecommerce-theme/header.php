@@ -17,7 +17,7 @@
    <div class="logo">
   <a href="<?php echo home_url('/'); ?>">
    <img 
-  src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="Fresh Logo">
+  src="<?php echo get_template_directory_uri(); ?>/assets/images/logoooo-removebg-preview.png" alt="Fresh Logo">
 
   </a>
 </div>
@@ -54,9 +54,15 @@
  
 </header>
  <script>
-    document.getElementById('menuToggle').addEventListener('click', function () {
-    document.getElementById('mainNav').classList.toggle('active');
-    document.body.classList.toggle('menu-open');
-    });
-    </script>
+document.addEventListener('DOMContentLoaded', function () {
+  const toggle = document.getElementById('menuToggle');
+  const nav = document.getElementById('mainNav');
 
+  toggle.addEventListener('click', function () {
+    nav.classList.toggle('active');
+  });
+});
+</script>
+
+</body>
+</html>

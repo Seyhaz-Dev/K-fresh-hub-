@@ -4,7 +4,7 @@ Author: Demo
 Version: 1.0
 */
 
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,9 +28,10 @@ body {
   padding: 10px 16px;
 }
 
-/* Logo */
+
 .logo img {
   height: 40px;
+  margin-left: 150px;
 }
 
 
@@ -49,7 +50,7 @@ body {
 
 .search-box input[type="search"] {
   width: 100%;
-  padding: 10px 14px 10px 40px; /* space for icon */
+  padding: 10px 14px 10px 40px;
   border-radius: 20px;
   border: 1px solid #ccc;
   font-size: 14px;
@@ -61,10 +62,10 @@ body {
   top: 50%;
   transform: translateY(-50%);
   color: #888;
-  pointer-events: none; /* click goes to input */
+  pointer-events: none; 
 }
 
-/* Menu */
+
 .main-nav {
     margin-right: 150px;
 }
@@ -87,6 +88,9 @@ body {
   color: #2e7d32;
   font-weight: 600;
 }
+.menu a:hover{
+  color: #348BF2;
+}
 
 .menu-toggle {
   display: none;
@@ -96,35 +100,219 @@ body {
 
 @media (max-width: 768px) {
 
-  .menu-toggle {
-    display: block;
-    font-size: 26px;
-    cursor: pointer;
-  }
 
-  /* Hide menu by default */
-  .main-nav {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    border-top: 1px solid #ddd;
-    z-index: 999;
-  }
+.menu-toggle {
+  display: block;
+  font-size: 26px;
+  cursor: pointer;
+}
 
-  /* Show full menu */
-  .main-nav.active {
-    display: block;
-  }
 
-  .menu {
+.header-inner {
+  gap: 10px;
+}
+
+
+.logo img {
+  margin: 0;
+  height: 36px;
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.search-box form {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.search-box input[type="search"] {
+  width: 100%;
+  padding: 10px 14px 10px 40px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+.main-nav {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  z-index: 999;
+}
+
+.main-nav.active {
+  display: block;
+}
+
+.menu {
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.menu li {
+  margin: 12px 0;
+}
+}
+
+.site-footer {
+  background:#348BF2;
+  color: #111010;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 100%;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-col p {
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #1b1a1a;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #000000;
+}
+.footer-col img {
+  height: 40px;
+  margin-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
     flex-direction: column;
-    padding: 15px 0;
-  }
-
-  .menu li {
-    margin: 12px 0;
+    text-align: center;
   }
 }
+
+.home-hero {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.home-hero h1 {
+    font-size: 28px;
+}
+
+.home-hero p {
+    font-size: 16px;
+}
+
+.home-hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 22px;
+    background: #0a5;
+    color: #ffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.home-hero .btn:hover {
+    background-color: rgb(212, 212, 212);
+    color: #28ad00;
+    transition: all 0.3s ease;
+}
+
+.home-about,
+.home-features {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+
+.home-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.feature-box {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+
+.home-hero {
+padding: 100px 20px;
+}
+
+.home-hero h1 {
+font-size: 42px;
+}
+
+.home-hero p {
+font-size: 18px;
+}
+
+.home-hero .btn {
+font-size: 16px;
+padding: 12px 28px;
+}
+
+.home-features {
+flex-direction: row;
+justify-content: center;
+}
+
+.feature-box {
+width: 250px;
+}
+
+}
+
