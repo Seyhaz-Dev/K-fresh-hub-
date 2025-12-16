@@ -6,7 +6,7 @@
 
   
     <div class="footer-col">
-     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logoooo-removebg-preview.png" alt="Fresh Logo">
+     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/K.f.webp" alt="Fresh Logo">
         <p class="footer-text">
         Fresh seafood delivered with quality and care.  <br>
         We work closely with trusted fishermen and suppliers to bring you  <br>
@@ -16,7 +16,7 @@
     </div>
 
 
-     <!-- Quick Links -->
+ 
     <div class="footer-col">
       <h4><i class="fa-solid fa-link"></i> Quick Links</h4>
       <ul>
@@ -35,7 +35,7 @@
       </ul>
     </div>
 
-    <!-- Social -->
+  
     <div class="footer-col">
       <h4><i class="fa-solid fa-share-nodes"></i> Follow Us</h4>
       <ul class="social-links">
@@ -46,7 +46,7 @@
 
   </div>
 
-  <!-- Bottom -->
+
   <div class="footer-bottom">
     <p>© <?php echo date('Y'); ?> Fresh Seafood. All rights reserved.</p>
   </div>
