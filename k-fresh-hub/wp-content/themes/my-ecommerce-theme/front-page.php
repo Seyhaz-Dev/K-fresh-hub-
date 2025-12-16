@@ -75,7 +75,7 @@
 
         <div class="category-card">
             <a href="#squid" class="icon-circle">
-                 <i class="fas fa-shrimp"></i> <!-- Squid icon custom SVG or image -->
+                 <i class="fas fa-shrimp"></i> 
             </a>
             <h3>crayfish</h3>
             <p>High-quality squid for seafood lovers.</p>
@@ -125,7 +125,7 @@
   </div>
   
   <div class="show-more-container">
-    <a href="<?php echo site_url('/shop'); ?>" class="show-more-link">Show More →</a>
+    <a href="<?php echo get_template_directory_uri(); ?>" class="show-more-link">Show More →</a>
   </div>
 </section>
 

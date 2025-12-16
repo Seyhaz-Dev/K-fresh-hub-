@@ -26,7 +26,7 @@
       </ul>
     </div>
 
-    <!-- Account -->
+ 
     <div class="footer-col">
       <h4><i class="fa-solid fa-user"></i> Account</h4>
       <ul>

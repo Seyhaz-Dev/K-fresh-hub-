@@ -474,4 +474,38 @@ body {
   }
 }
 
+/* Container for the link */
+.show-more-container {
+  text-align: center; /* Center the link */
+  margin: 2rem 0;     /* Space above and below */
+}
+
+/* The "Show More" link */
+.show-more-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;       /* Button-like padding */
+  background-color: #007bff;     /* Blue background */
+  color: #fff;                   /* White text */
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 8px;            /* Rounded corners */
+  text-decoration: none;          /* Remove underline */
+  transition: all 0.3s ease;     /* Smooth hover animation */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect */
+.show-more-link:hover {
+  background-color: #0056b3;     /* Darker blue on hover */
+  transform: translateY(-2px);   /* Slight lift */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional active/click effect */
+.show-more-link:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 
