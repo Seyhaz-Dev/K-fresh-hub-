@@ -90,34 +90,42 @@
     <div class="scroller__track">
       
       <div class="product-card">
-        <!-- <img src="fish.jpg" alt="Fresh Fish"> -->
+             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/salmon.jpg" alt="Fresh Logo">
+     
         <h3>Fresh Fish</h3>
         <p class="price">$8.50 / kg</p>
         <button class="btn-cart">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <!-- <img src="shrimp.jpg" alt="Shrimp"> -->
+             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/srimp.jpg" alt="Fresh Logo">
+
         <h3>Shrimp</h3>
         <p class="price">$12.00 / kg</p>
         <button class="btn-cart">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <!-- <img src="crab.jpg" alt="Crab"> -->
+         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/crap.jpg" alt="Fresh Logo">
+
         <h3>Crab</h3>
         <p class="price">$15.00 / kg</p>
         <button class="btn-cart">Add to Cart</button>
       </div>
 
       <div class="product-card">
-        <!-- <img src="squid.jpg" alt="Squid"> -->
+     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/squid.jpg" alt="Fresh Logo">
+
         <h3>Squid</h3>
         <p class="price">$9.50 / kg</p>
         <button class="btn-cart">Add to Cart</button>
       </div>
 
     </div>
+  </div>
+  
+  <div class="show-more-container">
+    <a href="<?php echo site_url('/shop'); ?>" class="show-more-link">Show More →</a>
   </div>
 </section>
 
